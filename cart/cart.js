@@ -41,7 +41,7 @@ export const add3Products = (aCart) => {
  * input: il carrello
  * output: totale da pagare
  */
-const getTotalAmount = (aCart) => {
+export const getTotalAmount = (aCart) => {
     return aCart.reduce((total, product) => total + product.price * product.qty, 0);
 };
 
@@ -50,7 +50,7 @@ const getTotalAmount = (aCart) => {
  * input: il carrello
  * output: totale quantità prodotti
  */
-const getTotalQuantity = (aCart) => {
+export const getTotalQuantity = (aCart) => {
     return aCart.reduce((totalQty, product) => totalQty + product.qty, 0);
 };
 
@@ -59,13 +59,7 @@ const getTotalQuantity = (aCart) => {
  * input: il carrello
  * output: carrello vuoto
  */
-const resetCart = () => {
+export const resetCart = () => {
     return [];
-};
-
-export {
-    getTotalAmount,
-    getTotalQuantity,
-    resetCart,
 };
 

@@ -8,7 +8,6 @@ const addToCart = (aCart, prod) => {
     return aCart;
 }
 
-
 /**
  * 2) Aggiungiamo 3 prodotti differenti nel carrello
  * input: il carrello
